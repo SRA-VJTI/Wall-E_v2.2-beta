@@ -28,10 +28,12 @@ void calculate_motor_command(const float pitch_error, float *motor_cmd)
 	/** Error values **/
 	// Stores pitch error of previous iteration
 	static float prev_pitch_error = 0.0f;
+
 	// Stores sum of product of errors with time interval obtained during each iteration
 	static float pitch_area = 0.0f;
 	// Stores difference between current error and previous iteration error
 	float pitch_error_difference = 0.0f;
+
 
 	/** Correction values **/
 	// Variables for storing corrected values
